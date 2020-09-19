@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Vitals & Allergy</title>
+	
+</head>
+<body>
+    blood group: {{bloodgroup}}
+    blood pressure : {{bp}}
+
+	
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-image: url(https://images.squarespace-cdn.com/content/v1/55537ffce4b011d75be6a75a/1540132020749-YW550R0GLTZ3EW1HYGOO/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UbeDbaZv1s3QfpIA4TYnL5Qao8BosUKjCVjCf8TKewJIH3bqxw7fF48mhrq5Ulr0Hg/Backgrounds-_0005_gradient-Ligh-blue.png?format=2500w);
+		}
+		div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+
+  }
+  div.pad {
+  
+  font-weight: bold;
+  color: #000000;
+		label{
+			white-space: pre-wrap;
+		}
+	</style>
+	<title>view vitals</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" style="padding-top: 150px">
+		<div class="transbox">
+			<div class="pad" style="padding-left: 1rem; padding-top: 1rem;">
+				<div class="col-sm-5">
+				 <h3>View Vitals</h3>
+				</div>
+			</div>
+			<div class=" pad" style="padding-left: 1rem;padding-top: 1rem; ">
+				   <label for="inputpressure" class="col-sm-3">Blood Pressure:</label> {{bloodgroup}}
+					<div class="col-sm-5"></div>
+			</div>	
+			<div class=" pad" style="padding-left: 1rem">
+				   <label for="inputbody" class="col-sm-3">Blood Group:</label> {{bp}}
+					<div class="col-sm-5"></div>
+            </div>
+            <div class=" pad" style="padding-left: 1rem">
+                <label for="inputbody" class="col-sm-3">Body temperature:</label>  {{temp}}
+                 <div class="col-sm-5"></div>
+         </div>	
+			<div class=" pad" style="padding-left: 1rem">
+				   <label for="inputrate" class="col-sm-3">Heart rate:</label>  {{heartrate}}
+					<div class="col-sm-5"></div>
+			</div>	
+			<div class=" pad" style="padding-left: 1rem">
+				   <label for="inputResrate" class="col-sm-3">Respriration rate:</label>  {{respirationrate}}
+					<div class="col-sm-5"></div>
+			</div>	
+			
+		</div>
+</div>
+
+</body>
+</html>
