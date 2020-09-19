@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3WJ3vCS9Sfh5W6C3TMtX4sWEciUNwNk1vTL1wX0lC5jTHx4UF);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+
+  }
+  div.pad {
+  
+  font-weight: bold;
+  color: #000000;
+}
+ input.bad{
+  border: 1px solid black;
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<head>
+	<title>Insurance details</title>
+</head>
+<body>
+	<div class="container " style="padding-top: 2rem;">
+<div class="transbox">
+<form action="/submitinsurance/" method="POST">
+  {% csrf_token %}
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <div class="col-sm-12 mt-3">
+      <h3 style="font-size:2rem;">Insurance Form</h3>
+    </div>
+  </div>
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <label for="compinput" class="col-sm-2 col-form-label" >Insurance Company:</label>
+     <div class="col-sm-5">
+      <input type="text" name="insurance" class="form-control bad" placeholder="ex: LIC " id="compinput">
+     </div>
+  </div>
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <label for="numinput" class="col-sm-2 col-form-label"> Insurance Number:</label>
+     <div class="col-sm-5">
+       <input type="text" name="number" class="form-control bad" placeholder="Enter your insurance number:" id="numinput" >
+      </div> 
+  </div>
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <label for="pol" class="col-sm-2 col-form-label">Policy Number:</label>
+     <div class="col-sm-5">
+      <input name="policy" class="form-control bad" id="pol" type="text" placeholder="Enter your policy number">
+     </div>
+  </div>
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <label for="val" class="col-sm-2 col-form-label">Valid Till:</label>
+     <div class="col-sm-5">
+      <input type="text" name="valid" class="form-control bad" placeholder="ex:12/02/2001" id="val">
+     </div>
+  </div>
+  
+  <div class="form-group row " style="padding-left: 1rem;">
+     <div class="col-sm-5">
+     
+     <button class="btn btn-dark bad" type="submit">Save</button>
+ </div>
+
+</form>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
