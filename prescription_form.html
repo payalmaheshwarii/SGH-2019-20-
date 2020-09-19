@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prescription Form</title>
+    <style type="text/css">
+      body{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3WJ3vCS9Sfh5W6C3TMtX4sWEciUNwNk1vTL1wX0lC5jTHx4UF);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+
+  }
+  div.pad {
+  
+  font-weight: bold;
+  color: #000000;
+}
+ input.bad{
+  border: 1px solid black;
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+
+<div class="container " >
+<div class="transbox">
+<form action="/submitprescription/" method="POST">
+{% csrf_token %}
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <div class="col-sm-12 mt-3">
+      <h3 style="font-size:2rem;">Prescription Form</h3>
+    </div>
+  </div>
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <label for="hostinput" class="col-sm-2 col-form-label" >Hospital/Clinic:</label>
+     <div class="col-sm-5">
+      <input type="text" name="hospital" class="form-control bad" placeholder="ex: Appolo Hospital">
+     </div>
+  </div>
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <label for="docinput" class="col-sm-2 col-form-label"> Doctor Name:</label>
+     <div class="col-sm-5">
+       <input type="text" name="doctor" class="form-control bad" placeholder="ex: Dr Shah">
+      </div> 
+  </div>
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <label for="pres" class="col-sm-2 col-form-label">Prescribed on:</label>
+     <div class="col-sm-5">
+      <textarea name="prescribedon" rows="5" cols="50" class="form-control bad" placeholder="Prescribed on"></textarea>
+     </div>
+  </div>
+  <div class="form-group row pad" style="padding-left: 1rem;">
+    <label for="not" class="col-sm-2 col-form-label">Notes/Remarks:</label>
+     <div class="col-sm-5">
+      <input type="text" name="notes" class="form-control bad" placeholder="Notes">
+     </div>
+  </div>
+  <div class="form-group row pad" style="padding-left: 2rem;">
+    <label for="exampleFormControlFile1"> File input</label>
+    <input type="file" name="file" class="form-control-file" id="file">
+    
+  </div>
+  <div class="form-group row " style="padding-left: 1rem;">
+     <div class="col-sm-5">
+     <button class="btn btn-dark bad" type="submit">Submit It.</button>
+ </div>
+
+</form>
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
