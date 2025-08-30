@@ -1,3 +1,3 @@
-# SGH-2019-20-
-Online Medical details
-Web Application which can be used as a single source of information pertaining to an individual's health, medical history, remedies/test prescribed and their outcomes, reports etc. It is easily accessible by doctors to view medical records and history of the patients.
+Universal Health Application is a web application designed to serve as a centralized health information system, offering a single source of truth for an individual’s medical records. It securely stores details such as medical history, prescribed remedies/tests, reports, and treatment outcomes. This application was developed as part of SGH-2019-20 (Smart Gujarat For New India Hackathon 2019-2020)
+
+The platform enables doctors to easily access patient records in one place, improving diagnosis, continuity of care, and overall efficiency in healthcare management.
